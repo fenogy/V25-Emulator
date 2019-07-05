@@ -1,0 +1,16 @@
+bin\Debug\V25Emulator.exe
+bin\Debug\V25Emulator.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\V25Emulator.Form1.resources
+obj\Debug\V25Emulator.Properties.Resources.resources
+obj\Debug\V25Emulator.csproj.GenerateResource.Cache
+obj\Debug\V25Emulator.exe
+obj\Debug\V25Emulator.pdb
+obj\Debug\V25Emulator.CustomByteData.resources
+obj\Debug\V25Emulator.CommandPacketCreateForm.resources
+obj\Debug\V25Emulator.SendDataDisplay.resources
+obj\Debug\V25Emulator.UserInputData.resources
+obj\Debug\V25Emulator.SettingsForm.resources
+obj\Debug\V25Emulator.ResponsePacketCreateForm.resources
+obj\Debug\V25Emulator.RemoveCommandFromPollingQForm.resources
+obj\Debug\V25Emulator.AddToShortcutForm.resources

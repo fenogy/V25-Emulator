@@ -1,0 +1,543 @@
+<?xml version="1.0" standalone="yes"?>
+<Configuration xmlns="http://tempuri.org/Configuration.xsd">
+  <xs:schema id="Configuration" targetNamespace="http://tempuri.org/Configuration.xsd" xmlns:mstns="http://tempuri.org/Configuration.xsd" xmlns="http://tempuri.org/Configuration.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+    <xs:element name="Configuration" msdata:IsDataSet="true" msdata:Locale="">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Device">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="1" type="xs:int" />
+                <xs:element name="Address" type="xs:string" minOccurs="0" />
+                <xs:element name="Command" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="SendPacketData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:int" minOccurs="0" />
+                <xs:element name="CodeTag" type="xs:string" minOccurs="0" />
+                <xs:element name="ByteNo" type="xs:int" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="DataTag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ResponsePacketData">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Id" type="xs:int" minOccurs="0" />
+                <xs:element name="CodeTag" type="xs:string" minOccurs="0" />
+                <xs:element name="ByteNo" type="xs:int" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="DataTag" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="RS232Config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Port" type="xs:string" minOccurs="0" />
+                <xs:element name="Baud" type="xs:string" minOccurs="0" />
+                <xs:element name="DataBits" type="xs:int" minOccurs="0" />
+                <xs:element name="StopBits" type="xs:string" minOccurs="0" />
+                <xs:element name="Parity" type="xs:string" minOccurs="0" />
+                <xs:element name="ResponseDelay" type="xs:string" minOccurs="0" />
+                <xs:element name="InterCharGap" type="xs:string" minOccurs="0" />
+                <xs:element name="PollingInterval" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Version">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="PollingQ">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Data" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="ShortCutButton">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ButtonId" type="xs:int" minOccurs="0" />
+                <xs:element name="ButtonText" type="xs:string" minOccurs="0" />
+                <xs:element name="Data" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Version_x0020_" msprop:Generator_TableClassName="Version_DataTable" msprop:Generator_TableVarName="tableVersion_" msprop:Generator_RowEvArgName="Version_RowChangeEvent" msprop:Generator_RowEvHandlerName="Version_RowChangeEventHandler" msprop:Generator_RowClassName="Version_Row" msprop:Generator_TablePropName="Version_">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Version" type="xs:string" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Device>
+    <Id>7</Id>
+    <Address>SmartBord</Address>
+    <Command>0x48</Command>
+    <Description>Poll</Description>
+  </Device>
+  <Device>
+    <Id>8</Id>
+    <Address>SmartBord</Address>
+    <Command>0x4B</Command>
+    <Description>Pyro avaraging On/Off</Description>
+  </Device>
+  <Device>
+    <Id>9</Id>
+    <Address>SmartBord</Address>
+    <Command>0x55</Command>
+    <Description>Download</Description>
+  </Device>
+  <Device>
+    <Id>10</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5A</Command>
+    <Description>Pyro Set Point</Description>
+  </Device>
+  <Device>
+    <Id>11</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5B</Command>
+    <Description>Calibrate digital POT </Description>
+  </Device>
+  <Device>
+    <Id>12</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5C</Command>
+    <Description>Move motor (attenuator or harmonic control) 1 - 254 steps</Description>
+  </Device>
+  <Device>
+    <Id>13</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5D</Command>
+    <Description>Set Marx Bank POT</Description>
+  </Device>
+  <Device>
+    <Id>14</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5E</Command>
+    <Description>Set Safe Mode</Description>
+  </Device>
+  <Device>
+    <Id>15</Id>
+    <Address>SmartBord</Address>
+    <Command>0x5F</Command>
+    <Description>Clear Safe Mode</Description>
+  </Device>
+  <Device>
+    <Id>16</Id>
+    <Address>SmartBord</Address>
+    <Command>0x44</Command>
+    <Description>Upload</Description>
+  </Device>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>address </Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>address </Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>address </Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>5</ByteNo>
+    <Description>address </Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>6</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>7</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>8</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>9</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>addres H</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>addres L</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>addres H</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>5</ByteNo>
+    <Description>addres L</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>7</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Controls</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>8</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Control</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>10</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Pyro Val MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>10</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Pyro Val LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>11</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>POT Number</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Motor Control</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Motor Steps MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>Motor Steps LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>13</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>POT Value MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <SendPacketData>
+    <Id>13</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>POT Value LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </SendPacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>5</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>6</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>7</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>8</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>9</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>9</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>7</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Status Byte 1</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>7</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Status Byte 1</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>7</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>status Byte 3</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>7</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>5</ByteNo>
+    <Description>status Byte 4</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>8</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Control</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Address</CodeTag>
+    <ByteNo>5</ByteNo>
+    <Description>Address</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>6</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>7</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>8</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>16</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>9</ByteNo>
+    <Description>Data</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>10</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Pyro Val MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>10</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Pyro Val LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>11</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>POT Number</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>Motor Control</Description>
+    <DataTag>EightBitSingle</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>Motor Steps MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>12</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>4</ByteNo>
+    <Description>Motor Steps LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>13</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>2</ByteNo>
+    <Description>POT Value MSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <ResponsePacketData>
+    <Id>13</Id>
+    <CodeTag>Data</CodeTag>
+    <ByteNo>3</ByteNo>
+    <Description>POT Value LSB</Description>
+    <DataTag>EightBitNibble</DataTag>
+  </ResponsePacketData>
+  <RS232Config>
+    <Port>1</Port>
+    <Baud>BR_9600</Baud>
+    <DataBits>8</DataBits>
+    <StopBits>One</StopBits>
+    <Parity>None</Parity>
+    <ResponseDelay>20</ResponseDelay>
+    <InterCharGap>0</InterCharGap>
+    <PollingInterval>10</PollingInterval>
+  </RS232Config>
+  <PollingQ>
+    <Data>16,72,192,204,13</Data>
+  </PollingQ>
+  <PollingQ>
+    <Data>16,90,243,243,202,13</Data>
+  </PollingQ>
+  <PollingQ>
+    <Data>16,72,128,236,13</Data>
+  </PollingQ>
+  <ShortCutButton>
+    <ButtonId>1</ButtonId>
+    <ButtonText>POLL ATT</ButtonText>
+    <Data>SmartBord,48,64</Data>
+  </ShortCutButton>
+  <ShortCutButton>
+    <ButtonId>2</ButtonId>
+    <ButtonText>MOV HOME</ButtonText>
+    <Data>SmartBord,5C,241,255</Data>
+  </ShortCutButton>
+  <ShortCutButton>
+    <ButtonId>3</ButtonId>
+    <ButtonText>MOV 1 A</ButtonText>
+    <Data>SmartBord,5C,113,10</Data>
+  </ShortCutButton>
+  <ShortCutButton>
+    <ButtonId>4</ButtonId>
+    <ButtonText>MOV 0 A</ButtonText>
+    <Data>SmartBord,5C,112,10</Data>
+  </ShortCutButton>
+</Configuration>
